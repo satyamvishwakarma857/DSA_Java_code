@@ -19,19 +19,22 @@ public class _8infixEvaluation {
             else{
                 if(ch=='+' || ch=='-'){
                     //work
-                    int val2 = val.pop();
-                    int val1 = val.pop();
-                    if(op.peek()=='+') val.push(val1+val2);
-                    else if(op.peek()=='-') val.push(val1-val2);
-                    else if(op.peek()=='*') val.push(val1*val2);
-                    else if(op.peek()=='/') val.push(val1/val2);
-                    op.pop();
+                    while(op.size()>0) { // raghav sir ne ye while loop nhi lgaya h jiske karan unka code kuchh particular ex pr nhi chlta like "2*5/2+3-2*8+5/5"
+                        int val2 = val.pop();
+                        int val1 = val.pop();
+                        if (op.peek() == '+') val.push(val1 + val2);
+                        else if (op.peek() == '-') val.push(val1 - val2);
+                        else if (op.peek() == '*') val.push(val1 * val2);
+                        else if (op.peek() == '/') val.push(val1 / val2);
+                        op.pop();
+                    }
                     //push
                     op.push(ch);
                 }
                 else if(ch=='*' || ch=='/'){
                     if(op.peek()=='*' || op.peek()=='/'){
                         //work
+
                         int val2 = val.pop();
                         int val1 = val.pop();
                         if(op.peek()=='*') val.push(val1*val2);
@@ -55,7 +58,7 @@ public class _8infixEvaluation {
             if(op.peek()=='*') val.push(val1*val2);
             if(op.peek()=='/') val.push(val1/val2);
             op.pop();
-            //push
+
 
 
         }
