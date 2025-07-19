@@ -29,3 +29,40 @@ public class array {
 
     }
 }
+/*
+class Solution {
+    public int[] asteroidCollision(int[] arr) {
+        int n = arr.length;
+        Stack<Integer> st = new Stack<>();
+        for(int i=0;i<n;i++){
+            if(st.size()==0) st.push(arr[i]);
+            else if(arr[i]<0 && st.peek()>0){
+                while(st.size()>0 && Math.abs(arr[i])>=st.peek() && st.peek()>0){
+                int x = st.pop();
+                if(st.size()>0 && st.peek()<0 && Math.abs(arr[i])!=x) st.push(arr[i]);
+
+
+
+
+            }
+            }
+            else{
+                st.push(arr[i]);
+            }
+
+
+
+        }
+        int size = st.size();
+        int ans[] = new int[size];
+        for(int i=ans.length-1;i>=0;i--){
+            ans[i] = st.pop();
+        }
+        return ans;
+
+
+
+
+    }
+}
+ */

@@ -11,7 +11,7 @@ public class _7nxtSmallerEle {
         Stack<Integer> st = new Stack<Integer>();
         st.push(arr[n-1]);
         for(int i=n-2;i>=0;i--){
-            while(st.size()>0 && st.peek()>arr[i]){
+            while(st.size()>0 && st.peek()>=arr[i]){
                 st.pop();
             }
             if(st.size()==0) ans[i] = -1;
@@ -24,7 +24,7 @@ public class _7nxtSmallerEle {
 
     }
     public static void main(String[] args) {
-        int[] arr = {6,7,3,4,12,5,8,6,2};
+        int[] arr = {2,3,4,2,5,5,1,8};
                    //3,3,2,2,5, 2,6,2,-1
         int[] a = nxtSmallerEle(arr);
         for(int i=0;i< a.length;i++){

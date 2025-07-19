@@ -11,7 +11,7 @@ public class _6nextGreaterElement {
         Stack<Integer> st = new Stack<Integer>();
         st.push(arr[n-1]);
         for(int i=n-2;i>=0;i--){
-            while(st.size()>0 && st.peek()<arr[i]){
+            while(st.size()>0 && st.peek()<=arr[i]){
                 st.pop();
             }
             if(st.size()==0) ans[i] = -1;
