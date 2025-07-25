@@ -8,6 +8,7 @@ public class _2arrayImplmentation {
         int r = n-1;
         int size = 0;
 
+
         //add method -->>
         void add(int x){
             arr[r] = x;

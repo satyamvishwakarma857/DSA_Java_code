@@ -16,6 +16,7 @@ public class _1basic {
         q.add(7);
         q.add(9);
         q.add(11);
+        
         System.out.println(q);
 
 
@@ -32,6 +33,8 @@ public class _1basic {
 
         //size fn -->>
         System.out.println(q.size()); // size() return the size(int val) of the queue ..
+
+        System.out.println(q.isEmpty());
 
 
 

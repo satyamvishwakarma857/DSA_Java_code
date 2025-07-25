@@ -15,6 +15,7 @@ public class _1basic {
         while(temp != null){
             System.out.println(temp.data);
             temp = temp.next;
+            
 
         }
 

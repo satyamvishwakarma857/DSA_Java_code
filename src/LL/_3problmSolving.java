@@ -20,6 +20,7 @@ public class _3problmSolving {
         System.out.println();
     }
     public static void main(String[] args) {
+
         Node a = new Node(3);
         Node b = new Node(3);
         Node c = new Node(3);
