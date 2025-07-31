@@ -1,8 +1,20 @@
 package HashMap;
 
+/*
+Application of hashmap -->>
+1. problems related to freq of an item
+2. Mapping problems
+3. Storage optimization
+4. Dictionary
+5. Phonebook
+
+Features -->>
+1.  HashMap doesn't preserve insertion order -->>
+2. doesn't allow duplicate keys but allows duplicate values
+ */
+
 import java.util.HashMap;
 import java.util.Map;
-// HashMap doesn't preserve insertion order -->>
 public class _1basic {
 
     static void HashMapMethods(){
@@ -16,6 +28,7 @@ public class _1basic {
         mp.put("lav", 17);
         mp.put("rishika", 19);
         mp.put("harry", 18);
+        System.out.println(mp);
         
 
 
